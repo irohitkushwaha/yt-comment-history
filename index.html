@@ -54,23 +54,55 @@
             "name": "Can I view my deleted comments on YouTube?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Once a comment is deleted, either by you or by the video creator, it is permanently removed from YouTube's servers and cannot be recovered."
+              "text": "No. Once a comment is deleted, either by you, the video creator, or through YouTube's automated system enforcement, it is permanently removed from Google's servers. YouTube does not archive or maintain a backup database of deleted comments for user retrieval, meaning they cannot be recovered or viewed in your history log under any circumstances."
             }
           },
           {
             "@type": "Question",
-            "name": "Why isn't my comment history appearing?",
+            "name": "Why isn't my comment history appearing on the page?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "This usually happens if you are logged into a different Google brand account or active channel. Make sure to switch to the correct channel on YouTube and Google My Activity before checking."
+              "text": "This is almost always caused by brand account confusion. If your Google account is associated with multiple YouTube channels or a brand account, the Google My Activity tool might default to a channel that has no comments. To resolve this, click your profile picture in the top-right corner of YouTube, select 'Switch account,' and choose the correct channel. Then, refresh your My Activity page to synchronize the active profile."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I search through my past YouTube comments?",
+            "name": "Can I search through my past comments using keywords?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The default Google My Activity comment history lists comments in chronological order. To search for specific keywords, you can use your browser's search function (Ctrl+F or Cmd+F) on that dashboard."
+              "text": "While the default Google My Activity dashboard lacks a built-in search bar specifically for comments, you can easily search them using your browser. Scroll down to load a large portion of your comment history, and then press Ctrl + F (Windows) or Cmd + F (Mac). Type in the keyword or phrase you are looking for to find specific comments quickly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it possible to download my entire YouTube comment history?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can export your complete comment data using Google Takeout. Visit takeout.google.com, deselect all services except for 'YouTube and YouTube Music', select 'All YouTube data included' and ensure 'comments' is checked. You can choose to export this data in either HTML or JSON format, allowing you to save a permanent, offline archive of all your past interactions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take for a newly posted comment to show up in my history?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Newly posted comments are logged in your Google My Activity history almost instantly. If you edit a comment after posting it, the log updates to display the new text, but it preserves the original timestamp of when the comment was first published rather than the edit time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can other people see my YouTube comment history?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Your Google My Activity dashboard is strictly private and only visible to you when logged into your specific Google Account. However, please remember that your individual comments on public YouTube videos remain publicly visible to anyone viewing those videos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why did some of my comments disappear from the history log without me deleting them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If a comment disappears from your history without your intervention, it is typically due to one of three reasons: the video itself was deleted or set to private by the creator, the channel owner blocked or hid your profile from their channel (which removes all your comments on their videos), or YouTube's automated spam filters flag and remove the comment for violating community guidelines."
             }
           }
         ]
@@ -78,31 +110,31 @@
       {
         "@type": "HowTo",
         "name": "How to Find YouTube Comment History on Desktop",
-        "description": "Follow these simple steps to manually find your entire YouTube comment history using a desktop browser.",
+        "description": "Follow these verified, detailed steps to manually find and manage your entire YouTube comment history using a desktop web browser.",
         "step": [
           {
             "@type": "HowToStep",
             "url": "https://github.com/irohitkushwaha/yt-comment-history#desktop-step-1",
-            "name": "Access YouTube",
-            "text": "Go to YouTube.com and ensure you are logged into your Google Account."
+            "name": "Go to YouTube and Switch to the Correct Channel",
+            "text": "Open your web browser, navigate to YouTube.com, and make sure you are signed in to your Google Account. If your email manages multiple channels or a brand account, click on your profile picture in the top-right corner, click Switch account, and select the specific profile whose comment history you want to check."
           },
           {
             "@type": "HowToStep",
             "url": "https://github.com/irohitkushwaha/yt-comment-history#desktop-step-2",
-            "name": "Open History sidebar",
-            "text": "Click on the three horizontal lines (hamburger menu) in the top-left corner and click on 'History' in the sidebar menu."
+            "name": "Access the History Sidebar Menu",
+            "text": "Look at the top-left corner of the YouTube homepage and click the three horizontal lines (hamburger menu ☰) to expand the main navigation sidebar. From the list of options, click on History."
           },
           {
             "@type": "HowToStep",
             "url": "https://github.com/irohitkushwaha/yt-comment-history#desktop-step-3",
-            "name": "Manage Comments",
-            "text": "On the right-hand panel, look under the 'Manage all history' section and click the 'Comments' button."
+            "name": "Click the Comments Option in the Manage Panel",
+            "text": "Once on the History page, locate the sidebar panel on the right side of the screen under the 'Manage all history' heading. Click on the Comments button to proceed. (If your browser window is narrow and the right panel is hidden, scroll to the bottom of the page or expand your browser window to reveal this menu)."
           },
           {
             "@type": "HowToStep",
             "url": "https://github.com/irohitkushwaha/yt-comment-history#desktop-step-4",
-            "name": "View and Manage Comments",
-            "text": "A new dashboard tab will open displaying all your past comments in chronological order. Here, you can click on the comments or tap the 'X' to delete."
+            "name": "View, Edit, or Delete Your Past Comments",
+            "text": "A new tab will automatically open the official Google My Activity YouTube Comments dashboard, displaying all your comments in reverse chronological order. Click the video link to edit it on YouTube, or click the 'X' button to delete a comment instantly."
           }
         ]
       }
@@ -123,7 +155,7 @@
         <svg viewBox="0 0 24 24" class="logo-icon" fill="currentColor">
           <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11C4.483 20.455 12 20.455 12 20.455s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
         </svg>
-        <span class="brand-name">YouTube Tools</span>
+        <span class="brand-name">YT Comment History</span>
       </div>
       <a href="https://github.com/irohitkushwaha/yt-comment-history" class="github-badge" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" class="github-icon" fill="currentColor">
@@ -161,6 +193,7 @@
           </a>
           <span class="safe-note">🔒 Safe & Secure. Redirects directly to your official Google Account dashboard.</span>
         </div>
+        <div class="hero-image-container"><img src="thumbnail.png" alt="YT Comment History Finder Web Tool Brand Image" class="hero-brand-image"></div>
       </section>
 
       <!-- Manual Step-by-Step Guides Section -->
@@ -201,40 +234,32 @@
               <li class="step-item">
                 <div class="step-num">1</div>
                 <div class="step-content">
-                  <h4>Access YouTube & Log In</h4>
-                  <p>Go to <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube.com</a> in your desktop browser. Make sure you are signed in to the Google account associated with your active channel.</p>
+                  <h4>Go to YouTube & Switch to the Correct Channel</h4>
+                  <p>Open your web browser, navigate to <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube.com</a>, and make sure you are signed in to your Google Account. If your email manages multiple channels or a brand account, click on your profile picture in the top-right corner, click **Switch account**, and select the specific profile whose comment history you want to check.</p>
                 </div>
               </li>
               <li class="step-item">
                 <div class="step-num">2</div>
                 <div class="step-content">
-                  <h4>Open Your Library History</h4>
-                  <p>Click on the **three-line menu (☰)** in the top-left corner to open the sidebar. Select **History** from the list of options.</p>
+                  <h4>Access the History Sidebar Menu</h4>
+                  <p>Look at the top-left corner of the YouTube homepage and click the **three horizontal lines (hamburger menu ☰)** to expand the main navigation sidebar. From the list of options, click on **History**.</p>
                 </div>
               </li>
               <li class="step-item">
                 <div class="step-num">3</div>
                 <div class="step-content">
-                  <h4>Navigate to Manage Comments</h4>
-                  <p>On the right side of the History page, you will see a menu block labeled **Manage all history**. Beneath it, click on the option named **Comments**.</p>
+                  <h4>Click the Comments Option in the Manage Panel</h4>
+                  <p>Once on the History page, locate the sidebar panel on the right side of the screen under the **Manage all history** heading. Click on the **Comments** button to proceed. (If your browser window is narrow and the right panel is hidden, scroll to the bottom of the page or expand your browser window to reveal this menu).</p>
                 </div>
               </li>
               <li class="step-item">
                 <div class="step-num">4</div>
                 <div class="step-content">
-                  <h4>View, Edit, or Delete Comments</h4>
-                  <p>A new tab opens the **Google My Activity YouTube Comments** board. Your comments are presented chronologically. You can click on the video link to edit it, or click the **"X"** to delete a comment instantly.</p>
+                  <h4>View, Edit, or Delete Your Past Comments</h4>
+                  <p>A new tab will automatically open the official **Google My Activity YouTube Comments** dashboard. Here, your entire comment history is listed in reverse chronological order. To edit or reply to a comment, click the video title or thumbnail link to go to that video. To delete a comment, click the **"X"** button next to it and confirm the deletion; it will be permanently erased.</p>
                 </div>
               </li>
             </ol>
-            <div class="step-placeholder-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="box-icon">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
-              <span>Visual screenshots showing this Desktop process will be available here soon!</span>
-            </div>
           </div>
 
           <!-- Mobile Steps Panel -->
@@ -244,40 +269,39 @@
               <li class="step-item">
                 <div class="step-num">1</div>
                 <div class="step-content">
-                  <h4>Open Settings in YouTube App</h4>
-                  <p>Launch the YouTube App on your iOS or Android device. Tap the **You** tab (profile picture) in the bottom-right corner, then tap the **Settings (gear icon)** in the top-right corner.</p>
+                  <h4>Open Settings in the YouTube App</h4>
+                  <p>Launch the official YouTube app on your Android or iOS device. Tap your profile tab icon (labeled **"You"**) in the bottom-right corner of the screen, and then tap the **Settings gear icon ⚙️** located in the top-right corner to open your account settings.</p>
                 </div>
               </li>
               <li class="step-item">
                 <div class="step-num">2</div>
                 <div class="step-content">
                   <h4>Select Manage All History</h4>
-                  <p>In the Settings list, tap **Manage all history**. If prompted, select the specific Google account or brand channel you want to examine.</p>
+                  <p>In the Settings menu, scroll down and tap **Manage all history**. If you have multiple Google Accounts or brand channels configured on your device, select the exact channel profile you want to inspect when prompted.</p>
                 </div>
               </li>
               <li class="step-item">
                 <div class="step-num">3</div>
                 <div class="step-content">
-                  <h4>Navigate to Interactions</h4>
-                  <p>On the resulting My Activity screen, tap the **Interactions** tab located in the top menu list (next to History and Saving Activity).</p>
+                  <h4>Navigate to the Interactions Tab</h4>
+                  <p>On the Google My Activity screen that loads, locate the horizontal menu tabs at the top of the interface: "History", "Saving activity", and "Interactions". Tap the **Interactions** tab.</p>
                 </div>
               </li>
               <li class="step-item">
                 <div class="step-num">4</div>
                 <div class="step-content">
                   <h4>Tap Comments & Replies</h4>
-                  <p>Scroll down to the Video Interactions section and tap **Comments & replies**. You will see your chronological history of YouTube comments, where you can read and delete them.</p>
+                  <p>Scroll down the Interactions page until you find the **Video interactions** section. Under this section, locate and tap on **Comments & replies**.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-num">5</div>
+                <div class="step-content">
+                  <h4>View and Manage Your Comments</h4>
+                  <p>The app will display your chronological YouTube comments log. You can review your past comments, tap the video links to open the original videos, or tap the **"X"** icon next to any comment to delete it permanently from Google's records.</p>
                 </div>
               </li>
             </ol>
-            <div class="step-placeholder-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="box-icon">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
-              <span>Visual screenshots showing this Mobile process will be available here soon!</span>
-            </div>
           </div>
 
         </div>
@@ -300,7 +324,7 @@
               </svg>
             </button>
             <div class="faq-answer" id="faq-answer-1" hidden>
-              <p>No. Once a comment is deleted—whether you deleted it yourself, the video creator removed it, or YouTube took it down due to community guideline violations—it is permanently erased from YouTube's servers and cannot be recovered or viewed in your history.</p>
+              <p>No. Once a comment is deleted, either by you, the video creator, or through YouTube's automated system enforcement, it is permanently removed from Google's servers. YouTube does not archive or maintain a backup database of deleted comments for user retrieval, meaning they cannot be recovered or viewed in your history log under any circumstances.</p>
             </div>
           </div>
 
@@ -312,7 +336,7 @@
               </svg>
             </button>
             <div class="faq-answer" id="faq-answer-2" hidden>
-              <p>This is almost always due to brand account confusion. Many YouTube users have multiple "channels" or "brand accounts" nested under a single Google login email. Ensure you have switched to the exact active brand account or channel inside both YouTube and Google My Activity before searching.</p>
+              <p>This is almost always caused by brand account confusion. If your Google account is associated with multiple YouTube channels or a brand account, the Google My Activity tool might default to a channel that has no comments. To resolve this, click your profile picture in the top-right corner of YouTube, select "Switch account," and choose the correct channel. Then, refresh your My Activity page to synchronize the active profile.</p>
             </div>
           </div>
 
@@ -324,7 +348,55 @@
               </svg>
             </button>
             <div class="faq-answer" id="faq-answer-3" hidden>
-              <p>The standard Google My Activity board only lets you view comments listed in chronological order. However, you can load your complete comment dashboard and use your browser's search shortcut (**Ctrl+F** on Windows or **Cmd+F** on Mac) to search for specific words or phrases you remember typing.</p>
+              <p>While the default Google My Activity dashboard lacks a built-in search bar specifically for comments, you can easily search them using your browser. Scroll down to load a large portion of your comment history, and then press **Ctrl + F** (Windows) or **Cmd + F** (Mac). Type in the keyword or phrase you are looking for to find specific comments quickly.</p>
+            </div>
+          </div>
+
+          <div class="glass-card faq-item" id="faq-4">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-4">
+              <span>Is it possible to download my entire YouTube comment history?</span>
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" hidden>
+              <p>Yes, you can export your complete comment data using Google Takeout. Visit <a href="https://takeout.google.com" target="_blank" rel="noopener noreferrer">takeout.google.com</a>, deselect all services except for "YouTube and YouTube Music", click "All YouTube data included" and ensure "comments" is checked. You can choose to export this data in either HTML or JSON format, allowing you to save a permanent, offline archive of all your past interactions.</p>
+            </div>
+          </div>
+
+          <div class="glass-card faq-item" id="faq-5">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-5">
+              <span>How long does it take for a newly posted comment to show up in my history?</span>
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" hidden>
+              <p>Newly posted comments are logged in your Google My Activity history almost instantly. If you edit a comment after posting it, the log updates to display the new text, but it preserves the original timestamp of when the comment was first published rather than the edit time.</p>
+            </div>
+          </div>
+
+          <div class="glass-card faq-item" id="faq-6">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-6">
+              <span>Can other people see my YouTube comment history?</span>
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-6" hidden>
+              <p>No. Your Google My Activity dashboard is strictly private and only visible to you when logged into your specific Google Account. However, please remember that your individual comments on public YouTube videos remain publicly visible to anyone viewing those videos.</p>
+            </div>
+          </div>
+
+          <div class="glass-card faq-item" id="faq-7">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-7">
+              <span>Why did some of my comments disappear from the history log without me deleting them?</span>
+              <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-7" hidden>
+              <p>If a comment disappears from your history without your intervention, it is typically due to one of three reasons: the video itself was deleted or set to private by the creator, the channel owner blocked or hid your profile from their channel (which removes all your comments on their videos), or YouTube's automated spam filters flag and remove the comment for violating community guidelines.</p>
             </div>
           </div>
 
@@ -337,7 +409,7 @@
   <!-- Footer Section -->
   <footer class="app-footer">
     <div class="container footer-container">
-      <p>&copy; 2026 YouTube Tools. Developed for optimal search performance & user ease.</p>
+      <p>&copy; 2026 YT Comment History. Developed for optimal search performance & user ease.</p>
       <div class="footer-links">
         <a href="#manual-guide">Manual Guides</a>
         <a href="#faq">FAQs</a>

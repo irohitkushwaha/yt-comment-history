@@ -5,22 +5,22 @@
 
 /* 1. Global Setup & Design Tokens */
 :root {
-  /* Color System (Tailored HSL) */
-  --bg-dark: hsl(224, 25%, 8%);
-  --bg-dark-accent: hsl(224, 25%, 11%);
+  /* Color System (Monochrome & Premium Gray Palette) */
+  --bg-dark: hsl(0, 0%, 4%);
+  --bg-dark-accent: hsl(0, 0%, 8%);
   
-  --glass-bg: hsla(224, 25%, 12%, 0.65);
-  --glass-border: hsla(224, 25%, 25%, 0.35);
-  --glass-border-hover: hsla(0, 84%, 60%, 0.35);
+  --glass-bg: hsla(0, 0%, 10%, 0.65);
+  --glass-border: hsla(0, 0%, 25%, 0.3);
+  --glass-border-hover: hsla(0, 0%, 50%, 0.4);
   
-  --primary-accent: hsl(0, 84%, 60%);       /* YouTube Brand Red */
-  --primary-accent-glow: hsla(0, 84%, 60%, 0.2);
-  --secondary-accent: hsl(263, 70%, 50%);    /* Royal Purple */
-  --secondary-accent-glow: hsla(263, 70%, 50%, 0.2);
+  --primary-accent: hsl(0, 0%, 98%);       /* Premium Silver/White */
+  --primary-accent-glow: hsla(0, 0%, 100%, 0.04);
+  --secondary-accent: hsl(0, 0%, 80%);    /* Elegant Medium Gray */
+  --secondary-accent-glow: hsla(0, 0%, 100%, 0.04);
   
   --text-primary: hsl(0, 0%, 98%);
-  --text-muted: hsl(215, 15%, 72%);
-  --text-dark: hsl(224, 15%, 50%);
+  --text-muted: hsl(0, 0%, 75%);
+  --text-dark: hsl(0, 0%, 50%);
 
   /* Layout Variables */
   --container-width: 1040px;
@@ -81,7 +81,7 @@ a {
 }
 
 a:hover {
-  filter: brightness(1.2);
+  filter: brightness(0.85);
 }
 
 .container {
@@ -100,7 +100,7 @@ a:hover {
   filter: blur(120px);
   z-index: -1;
   pointer-events: none;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .orb-primary {
@@ -123,7 +123,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: hsla(224, 25%, 8%, 0.8);
+  background-color: hsla(0, 0%, 4%, 0.8);
 }
 
 .header-container {
@@ -169,7 +169,7 @@ a:hover {
 .github-badge:hover {
   border-color: var(--text-muted);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .github-icon {
@@ -191,14 +191,14 @@ a:hover {
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 24px;
-  background: linear-gradient(135deg, var(--text-primary) 30%, hsl(0, 84%, 80%) 100%);
+  background: linear-gradient(135deg, var(--text-primary) 30%, hsl(0, 0%, 60%) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-title .highlight {
   position: relative;
-  background: linear-gradient(135deg, var(--primary-accent) 0%, var(--secondary-accent) 100%);
+  background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 70%) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -222,11 +222,11 @@ a:hover {
 
 .glass-card:hover {
   border-color: var(--glass-border-hover);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 75, 75, 0.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.03);
   transform: translateY(-2px);
 }
 
-/* Fast-Track Card Speicifics */
+/* Fast-Track Card Specifics */
 .fast-track-card {
   max-width: 720px;
   padding: 48px;
@@ -240,13 +240,15 @@ a:hover {
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--primary-accent) 0%, var(--secondary-accent) 100%);
+  background: linear-gradient(135deg, hsl(0, 0%, 20%) 0%, hsl(0, 0%, 10%) 100%);
+  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  color: hsl(0, 0%, 90%);
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   padding: 6px 16px;
   border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(255, 75, 75, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .fast-track-card h2 {
@@ -258,6 +260,37 @@ a:hover {
   font-size: 1rem;
   margin-bottom: 36px;
   line-height: 1.6;
+}
+
+/* Hero Embedded Brand Image Section */
+.hero-image-container {
+  margin-top: 48px;
+  width: 100%;
+  max-width: 640px;
+  padding: 8px;
+  background-color: hsla(0, 0%, 10%, 0.45);
+  border: 1px solid hsla(0, 0%, 25%, 0.3);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 255, 255, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-smooth);
+}
+
+.hero-image-container:hover {
+  border-color: hsla(0, 0%, 50%, 0.4);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.hero-brand-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: calc(var(--radius-lg) - 8px);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  display: block;
 }
 
 /* Premium Button Component */
@@ -275,17 +308,19 @@ a:hover {
   border: none;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(255, 75, 75, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-accent) 0%, hsl(0, 84%, 50%) 100%);
-  color: var(--text-primary);
+  background: linear-gradient(135deg, hsl(0, 0%, 96%) 0%, hsl(0, 0%, 80%) 100%);
+  color: hsl(0, 0%, 4%);
+  border: 1px solid hsla(0, 0%, 100%, 0.8);
 }
 
 .btn:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 30px rgba(255, 75, 75, 0.4), 0 0 15px rgba(255, 75, 75, 0.2);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08), 0 0 15px rgba(255, 255, 255, 0.03);
+  filter: brightness(1.05);
 }
 
 .btn-arrow {
@@ -359,15 +394,15 @@ a:hover {
 }
 
 .tab-button.active {
-  background-color: var(--glass-bg);
-  color: var(--text-primary);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--glass-border);
+  background-color: hsl(0, 0%, 96%);
+  color: hsl(0, 0%, 4%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid hsla(0, 0%, 100%, 0.15);
 }
 
 .tab-button:not(.active):hover {
   color: var(--text-primary);
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .tab-icon {
@@ -405,7 +440,7 @@ a:hover {
   left: 0;
   width: 40px;
   height: 3px;
-  background-color: var(--primary-accent);
+  background-color: hsl(0, 0%, 75%);
   border-radius: 5px;
 }
 
@@ -617,6 +652,11 @@ a:hover {
     font-size: 0.95rem;
     width: 100%;
     justify-content: center;
+  }
+  
+  .hero-image-container {
+    margin-top: 32px;
+    padding: 6px;
   }
   
   .guide-card {
